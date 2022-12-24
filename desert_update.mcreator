@@ -6,14 +6,14 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sajara"
+      "registry_name": "sahara_desert"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "biome.desert_update.sajara": "Sahara"
+      "biome.desert_update.sahara_desert": "Sahara desert"
     }
   },
   "foldersRoot": {

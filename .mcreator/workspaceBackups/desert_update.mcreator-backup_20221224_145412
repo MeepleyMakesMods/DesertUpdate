@@ -1,19 +1,19 @@
 {
   "mod_elements": [
     {
-      "name": "Saharadesert",
+      "name": "Sajara",
       "type": "biome",
-      "sortid": 3,
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "saharadesert"
+      "registry_name": "sajara"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "biome.desert_update.saharadesert": "Saharadesert"
+      "biome.desert_update.sajara": "Sahara"
     }
   },
   "foldersRoot": {
