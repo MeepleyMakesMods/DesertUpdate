@@ -29,7 +29,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.desertupdate.init.DesertUpdateModTabs;
+import net.mcreator.desertupdate.init.DesertUpdateModBiomes;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -45,9 +45,10 @@ public class DesertUpdateMod {
 
 	public DesertUpdateMod() {
 		MinecraftForge.EVENT_BUS.register(this);
-		DesertUpdateModTabs.load();
+
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
+		DesertUpdateModBiomes.REGISTRY.register(bus);
 	}
 
 	private static final String PROTOCOL_VERSION = "1";

@@ -1,28 +1,19 @@
 {
   "mod_elements": [
     {
-      "name": "JeOpaOpEenDriewieler",
-      "type": "tab",
-      "sortid": 1,
+      "name": "Saharadesert",
+      "type": "biome",
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "je_opa_op_een_driewieler"
-    },
-    {
-      "name": "Dfasfda",
-      "type": "tab",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dfasfda"
+      "registry_name": "saharadesert"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "itemGroup.tabje_opa_op_een_driewieler": "Je Opa Op Een Driewieler",
-      "itemGroup.tabdfasfda": "Dfasfda"
+      "biome.desert_update.saharadesert": "Saharadesert"
     }
   },
   "foldersRoot": {
