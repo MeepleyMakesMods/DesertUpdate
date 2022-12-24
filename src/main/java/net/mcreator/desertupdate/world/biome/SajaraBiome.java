@@ -30,7 +30,7 @@ public class SajaraBiome {
 			Climate.Parameter.span(-0.938072288166f, -0.604738954832f), 0);
 
 	public static Biome createBiome() {
-		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-2044284).waterColor(-16167774).waterFogColor(-16760944)
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-2044284).waterColor(-16167774).waterFogColor(329011)
 				.skyColor(-2044284).foliageColorOverride(-5259762).grassColorOverride(-3614440)
 				.ambientLoopSound(new SoundEvent(new ResourceLocation("entity.parrot.imitate.husk")))
 				.backgroundMusic(new Music(new SoundEvent(new ResourceLocation("music_disc.stal")), 12000, 24000, true))
@@ -41,8 +41,11 @@ public class SajaraBiome {
 						List.of(RarityFilter.onAverageOnceEvery(2), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome())));
 		BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDesertVegetation(biomeGenerationSettings);
+		BiomeDefaultFeatures.addDesertExtraDecoration(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
 		BiomeDefaultFeatures.addExtraGold(biomeGenerationSettings);
+		BiomeDefaultFeatures.addFossilDecoration(biomeGenerationSettings);
+		BiomeDefaultFeatures.addDefaultMonsterRoom(biomeGenerationSettings);
 		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder();
 		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.HUSK, 80, 2, 3));
 		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).temperature(2f).downfall(0.2f).specialEffects(effects)

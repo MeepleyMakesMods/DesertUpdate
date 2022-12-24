@@ -10,7 +10,7 @@
       "value": "Blocks.SANDSTONE#0"
     },
     "underwaterBlock": {
-      "value": ""
+      "value": "Blocks.SMOOTH_SANDSTONE"
     },
     "airColor": {
       "value": -2044284,
@@ -26,10 +26,6 @@
     },
     "waterColor": {
       "value": -16167774,
-      "falpha": 0.0
-    },
-    "waterFogColor": {
-      "value": -16760944,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -99,7 +95,7 @@
     "spawnBuriedTreasure": false,
     "oceanRuinType": "NONE",
     "spawnNetherBridge": false,
-    "spawnNetherFossil": false,
+    "spawnNetherFossil": true,
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
@@ -107,7 +103,10 @@
       "Caves",
       "DeadBushes",
       "ExtraGoldOre",
-      "Ores"
+      "Ores",
+      "Fossils",
+      "DesertFeatures",
+      "MonsterRooms"
     ],
     "spawnEntries": [
       {
