@@ -29,8 +29,6 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.desertupdate.init.DesertUpdateModBiomes;
-
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
@@ -48,7 +46,6 @@ public class DesertUpdateMod {
 
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
-		DesertUpdateModBiomes.REGISTRY.register(bus);
 	}
 
 	private static final String PROTOCOL_VERSION = "1";
