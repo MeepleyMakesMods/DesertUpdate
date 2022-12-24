@@ -1,19 +1,19 @@
 {
   "mod_elements": [
     {
-      "name": "Saharadesert",
-      "type": "biome",
-      "sortid": 3,
+      "name": "Ftgghdrg",
+      "type": "tab",
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "saharadesert"
+      "registry_name": "ftgghdrg"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "biome.desert_update.saharadesert": "Saharadesert"
+      "itemGroup.tabftgghdrg": "Ftgghdrg"
     }
   },
   "foldersRoot": {
