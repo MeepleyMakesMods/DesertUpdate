@@ -31,7 +31,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
-import net.mcreator.desertupdate.world.biome.SaharadesertBiome;
+import net.mcreator.desertupdate.world.biome.SajaraBiome;
 import net.mcreator.desertupdate.DesertUpdateMod;
 
 import java.util.Map;
@@ -45,7 +45,7 @@ import com.google.common.base.Suppliers;
 @Mod.EventBusSubscriber
 public class DesertUpdateModBiomes {
 	public static final DeferredRegister<Biome> REGISTRY = DeferredRegister.create(ForgeRegistries.BIOMES, DesertUpdateMod.MODID);
-	public static final RegistryObject<Biome> SAHARADESERT = REGISTRY.register("saharadesert", SaharadesertBiome::createBiome);
+	public static final RegistryObject<Biome> SAJARA = REGISTRY.register("sajara", SajaraBiome::createBiome);
 
 	@SubscribeEvent
 	public static void onServerAboutToStart(ServerAboutToStartEvent event) {
@@ -60,8 +60,8 @@ public class DesertUpdateModBiomes {
 				// Inject biomes to biome source
 				if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
 					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters.values());
-					parameters.add(new Pair<>(SaharadesertBiome.PARAMETER_POINT,
-							biomeRegistry.getOrCreateHolderOrThrow(ResourceKey.create(Registry.BIOME_REGISTRY, SAHARADESERT.getId()))));
+					parameters.add(new Pair<>(SajaraBiome.PARAMETER_POINT,
+							biomeRegistry.getOrCreateHolderOrThrow(ResourceKey.create(Registry.BIOME_REGISTRY, SAJARA.getId()))));
 
 					chunkGenerator.biomeSource = new MultiNoiseBiomeSource(new Climate.ParameterList<>(parameters), noiseSource.preset);
 					chunkGenerator.featuresPerStep = Suppliers
@@ -74,8 +74,8 @@ public class DesertUpdateModBiomes {
 					SurfaceRules.RuleSource currentRuleSource = noiseGeneratorSettings.surfaceRule();
 					if (currentRuleSource instanceof SurfaceRules.SequenceRuleSource sequenceRuleSource) {
 						List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
-						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, SAHARADESERT.getId()),
-								Blocks.SAND.defaultBlockState(), Blocks.SANDSTONE.defaultBlockState(), Blocks.SANDSTONE.defaultBlockState()));
+						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, SAJARA.getId()),
+								Blocks.SAND.defaultBlockState(), Blocks.SAND.defaultBlockState(), Blocks.SAND.defaultBlockState()));
 						NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
 								noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(), noiseGeneratorSettings.noiseRouter(),
 								SurfaceRules.sequence(surfaceRules.toArray(SurfaceRules.RuleSource[]::new)), noiseGeneratorSettings.spawnTarget(),
