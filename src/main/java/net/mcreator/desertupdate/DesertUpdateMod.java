@@ -29,7 +29,8 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.desertupdate.init.DesertUpdateModTabs;
+import net.mcreator.desertupdate.init.DesertUpdateModItems;
+import net.mcreator.desertupdate.init.DesertUpdateModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -45,8 +46,11 @@ public class DesertUpdateMod {
 
 	public DesertUpdateMod() {
 		MinecraftForge.EVENT_BUS.register(this);
-		DesertUpdateModTabs.load();
+
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		DesertUpdateModBlocks.REGISTRY.register(bus);
+		DesertUpdateModItems.REGISTRY.register(bus);
 
 	}
 

@@ -1,19 +1,19 @@
 {
   "mod_elements": [
     {
-      "name": "Dsfsafsd",
-      "type": "block",
+      "name": "Sajara",
+      "type": "biome",
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dsfsafsd"
+      "registry_name": "sajara"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.desert_update.dsfsafsd": "Dsfsafsd"
+      "biome.desert_update.sajara": "Sahara"
     }
   },
   "foldersRoot": {
