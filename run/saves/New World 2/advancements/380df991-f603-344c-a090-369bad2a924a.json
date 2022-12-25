@@ -1,0 +1,15 @@
+{
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:birch_forest": "2022-12-24 15:21:58 +0100",
+      "minecraft:beach": "2022-12-24 15:21:41 +0100",
+      "minecraft:swamp": "2022-12-24 15:22:17 +0100",
+      "minecraft:cold_ocean": "2022-12-24 15:23:24 +0100",
+      "minecraft:forest": "2022-12-24 15:22:16 +0100",
+      "minecraft:deep_cold_ocean": "2022-12-24 15:23:22 +0100",
+      "minecraft:jungle": "2022-12-24 15:22:41 +0100"
+    },
+    "done": false
+  },
+  "DataVersion": 3120
+}

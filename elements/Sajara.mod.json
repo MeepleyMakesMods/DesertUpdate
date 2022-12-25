@@ -12,22 +12,6 @@
     "underwaterBlock": {
       "value": "Blocks.SMOOTH_SANDSTONE"
     },
-    "airColor": {
-      "value": -2044284,
-      "falpha": 0.0
-    },
-    "grassColor": {
-      "value": -3614440,
-      "falpha": 0.0
-    },
-    "foliageColor": {
-      "value": -5259762,
-      "falpha": 0.0
-    },
-    "waterColor": {
-      "value": -16167774,
-      "falpha": 0.0
-    },
     "ambientSound": {
       "value": "entity.parrot.imitate.husk"
     },
@@ -47,7 +31,7 @@
     },
     "particlesProbability": 0.4,
     "rainingPossibility": 0.19999999999999998,
-    "temperature": 2.0,
+    "temperature": 0.5,
     "baseHeight": 0.1,
     "heightVariation": 0.2,
     "spawnBiome": true,
@@ -79,8 +63,8 @@
     "treeFruits": {
       "value": ""
     },
-    "spawnStronghold": true,
-    "spawnMineshaft": true,
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
     "spawnMineshaftMesa": false,
     "spawnPillagerOutpost": false,
     "villageType": "none",
@@ -108,16 +92,6 @@
       "DesertFeatures",
       "MonsterRooms"
     ],
-    "spawnEntries": [
-      {
-        "entity": {
-          "value": "EntityHusk"
-        },
-        "minGroup": 2,
-        "maxGroup": 3,
-        "weight": 80,
-        "spawnType": "monster"
-      }
-    ]
+    "spawnEntries": []
   }
 }
