@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "desert_update:blocks/uo8refuifwe8fu",
+    "up": "desert_update:blocks/uo8refuifwe8fu",
+    "north": "desert_update:blocks/uo8refuifwe8fu",
+    "east": "desert_update:blocks/uo8refuifwe8fu",
+    "south": "desert_update:blocks/uo8refuifwe8fu",
+    "west": "desert_update:blocks/uo8refuifwe8fu",
+    "particle": "desert_update:blocks/uo8refuifwe8fu"
+  },
+  "render_type": "solid"
+}

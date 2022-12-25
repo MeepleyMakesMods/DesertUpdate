@@ -1,0 +1,41 @@
+{
+  "mod_elements": [
+    {
+      "name": "Sajara",
+      "type": "biome",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sajara"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "biome.desert_update.sajara": "Sahara"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "desert_update",
+    "modName": "Desert Update",
+    "version": "1.0.0",
+    "author": "harou, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "modElementsPackage": "net.mcreator.desertupdate",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200348217
+}
